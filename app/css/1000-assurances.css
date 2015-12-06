@@ -731,3 +731,15 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #bb9d6b;
 }
+#partenaires img {
+  filter: url(../filters/filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+}
+#partenaires img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
