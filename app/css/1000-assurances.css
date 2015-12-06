@@ -732,6 +732,7 @@ body {
   webkit-tap-highlight-color: #bb9d6b;
 }
 #partenaires img {
+  margin: 50px auto;
   filter: url(../filters/filters.svg#grayscale);
   /* Firefox 3.5+ */
   filter: gray;
