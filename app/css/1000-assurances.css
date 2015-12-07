@@ -593,6 +593,13 @@ section#contact :-ms-input-placeholder {
 section#contact .text-danger {
   color: #e74c3c;
 }
+section#contact .gmap_contact {
+  height: 450px;
+}
+section#contact #map {
+  height: 450px;
+  width: 450px;
+}
 footer {
   padding: 25px 0;
   text-align: center;

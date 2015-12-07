@@ -29,6 +29,54 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!--
+            You need to include this script tag on any page that has a Google Map.
+
+            The following script tag will work when opening this example locally on your computer.
+            But if you use this on a localhost server or a live website you will need to include an API key.
+            Sign up for one here (it's free for small usage):
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+            After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&sensor=false"></script>
+        -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(50.7045971, 5.622944999999959),
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.7045971, 5.622944999999959),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+
 </head>
 
 <body id="page-top" class="index">
@@ -285,6 +333,78 @@
                 </div>
             </div>
             <div class="row">
+                <div class="col-lg-12">
+                  <div class="gmap_contact col-md-6">
+                    <div id="map"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div>
+                      <h4><i class="fa fa-home"></i> Siège social</h4></br>
+                      <div class="col-md-4">
+                        <h5>Adresse:</h5>
+                        <p class="text-muted">
+                          1000 Assurance <br/>
+                          Rue de Herstal, 28 <br/>
+                          4680 HERMEE
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <h5>Email:</h5>
+                        <p class="text-muted">
+                          contact@1000assurence.be
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <h5>Téléphone:</h5>
+                        <p class="text-muted">
+                          (+32) 499 13 79 36
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h4><i class="fa fa-clock-o"></i> Heures d'ouverture</h4></br>
+                      <div class="table-responsive">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Matin</th>
+                              <th>Après-midi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Lundi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Mardi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Mercredi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Jeudi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Vendredi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
