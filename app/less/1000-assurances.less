@@ -4,6 +4,7 @@
 // Global Components
 
 body {
+	background-color: darken(@gray-lighter, 5%);
 	overflow-x: hidden;
 	.body-font;
 }
@@ -53,6 +54,10 @@ h1, h2, h3, h4, h5, h6 {
 	margin: 0 auto;
 }
 
+.bg-dark-gray {
+	background-color: darken(@gray-lighter, 5%);
+}
+
 .bg-light-gray {
 	background-color: @gray-lighter;
 }
@@ -81,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
 // Custom Navigation Bar
 
 .navbar-default {
-	background-color: @gray-darkest;
+	background-color: @navbar-color;
 	border-color: transparent;
 	.navbar-brand {
 		color: @brand-primary;
@@ -113,7 +118,6 @@ h1, h2, h3, h4, h5, h6 {
     			.heading-font;
     			font-weight: 400;
     			letter-spacing: 1px;
-    			color: white;
     			&:hover,
     			&:focus {
     				color: @brand-primary;
@@ -153,7 +157,7 @@ h1, h2, h3, h4, h5, h6 {
 		}
     }
     .navbar-default.navbar-shrink {
-    	background-color: @gray-darkest;
+    	background-color: @navbar-color;
         padding: 10px 0;
 		.navbar-brand {
 	        font-size: 1.5em;
@@ -162,13 +166,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 header {
-	background-image: url('../img/header-bg.jpg');
+	background-image: url('../img/header-bg.png');
 	background-repeat: none;
 	background-attachment: scroll;
 	background-position: center center;
 	.background-cover;
 	text-align: center;
-	color: white;
 	.intro-text {
 		padding-top: 100px;
 		padding-bottom: 50px;
@@ -530,13 +533,13 @@ aside.clients {
 // Contact Section
 
 section#contact {
-	background-color: @gray-darkest;
-	background-image: url('../img/map-image.png');
-	background-position: center;
-	background-repeat: no-repeat;
-	.section-heading {
-		color: white;
-	}
+	// background-color: @gray-darkest;
+	// background-image: url('../img/map-image.png');
+	// background-position: center;
+	// background-repeat: no-repeat;
+	// .section-heading {
+	// 	color: white;
+	// }
 	.form-group {
 		margin-bottom: 25px;
 		input,

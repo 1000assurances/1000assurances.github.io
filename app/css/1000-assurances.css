@@ -1,4 +1,5 @@
 body {
+  background-color: #eaeaea;
   overflow-x: hidden;
   font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -43,6 +44,9 @@ h6 {
 }
 .img-centered {
   margin: 0 auto;
+}
+.bg-dark-gray {
+  background-color: #eaeaea;
 }
 .bg-light-gray {
   background-color: #f7f7f7;
@@ -142,7 +146,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: white;
 }
 .navbar-default {
-  background-color: #4e4e48;
+  background-color: white;
   border-color: transparent;
 }
 .navbar-default .navbar-brand {
@@ -174,7 +178,6 @@ fieldset[disabled] .btn-xl.active {
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 1px;
-  color: white;
 }
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
@@ -210,7 +213,7 @@ fieldset[disabled] .btn-xl.active {
     border-radius: 3px;
   }
   .navbar-default.navbar-shrink {
-    background-color: #4e4e48;
+    background-color: white;
     padding: 10px 0;
   }
   .navbar-default.navbar-shrink .navbar-brand {
@@ -218,7 +221,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url('../img/header-bg.png');
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -227,7 +230,6 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: white;
 }
 header .intro-text {
   padding-top: 100px;
@@ -544,15 +546,6 @@ section h3.section-subheading {
 }
 aside.clients img {
   margin: 50px auto;
-}
-section#contact {
-  background-color: #4e4e48;
-  background-image: url('../img/map-image.png');
-  background-position: center;
-  background-repeat: no-repeat;
-}
-section#contact .section-heading {
-  color: white;
 }
 section#contact .form-group {
   margin-bottom: 25px;
