@@ -547,6 +547,16 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
+section#contact .infos_contact {
+  margin-bottom: 55px;
+}
+section#contact .infos_contact .gmap_contact {
+  height: 450px;
+}
+section#contact .infos_contact .gmap_contact #map {
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
 section#contact .form-group {
   margin-bottom: 25px;
 }
@@ -592,13 +602,6 @@ section#contact :-ms-input-placeholder {
 }
 section#contact .text-danger {
   color: #e74c3c;
-}
-section#contact .gmap_contact {
-  height: 450px;
-}
-section#contact .gmap_contact #map {
-  border: 1px solid #ccc;
-  border-radius: 1em;
 }
 footer {
   padding: 25px 0;

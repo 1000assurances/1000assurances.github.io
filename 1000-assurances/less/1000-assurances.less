@@ -533,13 +533,19 @@ aside.clients {
 // Contact Section
 
 section#contact {
-	// background-color: @gray-darkest;
-	// background-image: url('../img/map-image.png');
-	// background-position: center;
-	// background-repeat: no-repeat;
-	// .section-heading {
-	// 	color: white;
-	// }
+	.infos_contact {
+		margin-bottom: 55px;
+
+		.gmap_contact {
+			height: 450px;
+
+			#map {
+				border: 1px solid #ccc;
+				border-radius: 1em;
+			}
+		}
+	}
+
 	.form-group {
 		margin-bottom: 25px;
 		input,
@@ -579,14 +585,6 @@ section#contact {
 	}
 	.text-danger {
 		color: @brand-danger;
-	}
-	.gmap_contact {
-		height: 450px;
-
-		#map {
-			border: 1px solid #ccc;
-			border-radius: 1em;
-		}
 	}
 }
 
