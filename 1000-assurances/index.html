@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="1000 Assurance est spécialisé dans [TODO]">
+
+    <title>1000 Assurances - courtier en assurance</title>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="shortcut icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1000-assurances.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!--
+            You need to include this script tag on any page that has a Google Map.
+
+            The following script tag will work when opening this example locally on your computer.
+            But if you use this on a localhost server or a live website you will need to include an API key.
+            Sign up for one here (it's free for small usage):
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+
+            After you sign up, use the following script tag with YOUR_GOOGLE_API_KEY replaced with your actual key.
+                <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_API_KEY&sensor=false"></script>
+        -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+        <script type="text/javascript">
+            // When the window has finished loading create our google map below
+            google.maps.event.addDomListener(window, 'load', init);
+
+            function init() {
+                // Basic options for a simple Google Map
+                // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+                var mapOptions = {
+                    // How zoomed in you want the map to start at (always required)
+                    zoom: 15,
+
+                    // The latitude and longitude to center the map (always required)
+                    center: new google.maps.LatLng(50.7045971, 5.622944999999959),
+
+                    // How you would like to style the map.
+                    // This is where you would paste any style found on Snazzy Maps.
+                    styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+                };
+
+                // Get the HTML DOM element that will contain your map
+                // We are using a div with id="map" seen below in the <body>
+                var mapElement = document.getElementById('map');
+
+                // Create the Google Map using our element and options defined above
+                var map = new google.maps.Map(mapElement, mapOptions);
+
+                // Let's also add a marker while we're at it
+                var marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(50.7045971, 5.622944999999959),
+                    map: map,
+                    title: 'Snazzy!'
+                });
+            }
+        </script>
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="page-scroll top-titre" href="#page-top"><img src="img/logo.png" alt=""></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#accueil">Accueil</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#assurances">Assurances</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#assistances">Assistances</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#equipe">Equipe</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#partenaires">Partenaires</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in">Besoin d'une assurance ?</div>
+                <div class="intro-heading">Nous sommes là pour vous couvrir</div>
+                <a href="#accueil" class="page-scroll btn btn-xl">Nous découvrir</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Accueil Section -->
+    <section id="accueil" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Accueil</h2>
+                </div>
+            </div>
+            <!-- TODO -->
+        </div>
+    </section>
+
+    <!-- Assurances Section -->
+    <section id="assurances">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Assurances</h2>
+                    <h3 class="section-subheading text-muted">Notre société vous propose une palette complête d'assurances afin de couvrir l'ensemble de vos besoins.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/assurances/auto.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading text-center">
+                                    <h4>ASSURANCE AUTO</h4>
+                                    <h4 class="subheading">L'assurance responsabilité civile automobile est légale et obligatoire.</h4>
+                                </div>
+                                <div class="timeline-body text-justify">
+                                    <p class="text-muted">
+                                      Vous recherchez une assurance voiture qui soit adaptée à vos besoin, à votre véhicule, à l’usage que vous en faites et à votre budget ?
+                                      Le cabinet de courtage en assurances Mélon à Hannut est à votre service pour vous accompagner et vous aider à trouver l’assurance auto qui vous couvrira parfaitement. Le cabinet d’assurances Mélon vous propose un accompagnement personnalisé tout au long de votre recherche d’assurance auto ou d’assurance moto, ainsi que pendant toute la durée de votre contrat. Un conseiller personnalisé vous est dédié et connaît ainsi votre dossier de A à Z.
+                                      En cas de sinistre, pas besoin de ré-expliquer les termes de votre contrat ou de rechercher les références précises et complexes de la rubrique concernée. Chez nous, vous n’êtes pas un simple numéro, nous vous proposons une relation personnalisée pour replacer la relation assureur / assuré dans un cadre humain.
+                                      Pour répondre à vos besoins, le cabinet d’assurances Mélon vous propose :
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="img/assurances/incendie.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading text-center">
+                                    <h4>ASSURANCE INCENDIE</h4>
+                                    <h4 class="subheading">L'assurance incendie. Protégez votre habitation.</h4>
+                                </div>
+                                <div class="timeline-body text-justify">
+                                    <p class="text-muted">
+                                      Savez vous réellement ce pour quoi vous êtes couvert en cas d’incendie de votre domicile ?
+                                      Quelle sera votre franchise ? Pour quel montant vos biens sont-ils assurés ? Il est bon de se poser ces questions avant qu’un malheur ne se produise. Vous avez souscrit une assurance en ligne et ne comprenez pas tous les termes de votre contrat ? Les seules questions posées avant la signature de votre contrat d’assurance incendie ont été le nombre de pièces de votre domicile et sa surface habitable ? Méfiez vous, vos biens ne sont peut être pas couverts à hauteur de leur valeur réelle. Vous souhaitez pouvoir parler à un conseiller unique, qui connaît votre dossier et non pas à un opérateur d’une plateforme d’appels qui ne fera que vous répéter les termes et conditions légales de votre contrat ? Vous souhaitez simplement avoir affaire à un courtier en assurance compétent, professionnel et disponible ? Le cabinet de courtage en assurances Mélon à Hannut est le partenaire idéal pour vos contrats d’assurance.
+                                      Lorsqu’on pense assurance habitation, on pense en premier à l’assurance contre les dégâts dûs à des événements climatiques, l’assurance vol et effraction, ou encore la responsabilité civile (RC) qui vous couvre en cas de dommage causé à des tiers. Il est important d’étudier la partie assurance incendie de votre contrat. Êtes vous couvert si l’incendie vient de votre cuisine ? D’un défaut de branchement électrique ? D’un accident de la vie quotidienne ? D’une source venant de l’extérieur de votre domicile (feu de barbecue …) ? D’un élément climatique (foudre) ? D’un feu de cheminée ? En cas d’incendie, quel sera votre plafond de remboursement pour vos appareils électroménagers et hifi ? Quelle est le montant de votre franchise ? Ces questions n’ont peut être pas été abordées lors de la signature de votre précédent contrat. Le cabinet d’assurance Mélon s’assure de connaître votre situation personnelle afin d’évaluer avec vous les risques auxquels vous êtes exposés et pour lesquels il est indispensable de vous assurer.
+                                      Nous souhaitons replacer l’humain au coeur de la relation assureur / assuré, c’est pourquoi votre conseillé dédié connaît votre dossier entièrement et peut répondre à vos questions sans délais. Relation privilégiée, dévouement, assistance, disponibilité comptent parmi les points forts du cabinet de courtage en assurances Mélon, afin de vous satisfaire au mieux.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Assistances Section -->
+    <section id="assistances" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Assistances</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-justify">
+                    <p class="large text-muted">
+                      Lorsque vous souscrivez un contrat d’assurance à la personne pour vous même ou votre famille ou un contrat d’assurance voiture, vous êtes couverts pour les dommages causés ou subits. Si vous tombez en panne de voiture, plus ou moins loin de votre lieu de résidence, en Belgique ou à l’étranger, que fait votre assurance pour vous venir en aide ? Pour quoi êtes vous couvert ? Si vous devez vous faire hospitaliser lors d’un séjour à l’étranger, quel montant des frais hospitaliers restera à votre charge ? Il est pertinent de se poser ces questions, et surtout d’y trouver les réponses. Pour ce faire, le cabinet de courtage en assurances Mélon à Hannut vous propose des garanties assistances.
+                      En résumé, les garanties assistances vous permettent d’être couverts lors d’une panne, d’un accident ou d’une hospitalisation. La plupart des contrats proposés comprennent ainsi une garantie assistance premier dépannage. Si vous avez un accident ou une panne, votre voiture est amenée jusqu’à un garage gratuitement pour y être réparée. Si vous avez besoin d’un véhicule de prêt pendant le temps des réparations, son coût peut être pris en charge par la garantie assistance véhicule. Si vous devez être hospitalisé lors d’un voyage à l’étranger, l’assistance à la personne permet la prise en charge du ticket modérateur. Vous n’avez donc pas à avancer les frais d’hospitalisation, qui peuvent s’avérer extrêmement chers.
+                      Pour vous offrir les meilleures garanties en termes d’assistances, nous collaborons avec de grandes compagnies d’assurances telles que Ibis, AG, Allianz, AXA … Vous bénéficiez donc de la meilleure couverture qu’il soit et d’un service personnalisé et adapté. Pour connaître toutes les modalités des garanties assistances, prenez rendez vous avec votre conseiller personnel par mail, par téléphone ou via le formulaire de contact. Nous étudierons votre situation ensemble et déterminerons quel type de contrat est fait pour vous.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Equipe Section -->
+    <section id="equipe">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Notre Equipe</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/equipe/hug_denis.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Huggenberger Denis</h4>
+                        <p class="text-muted">Gérant Fondateur, responsable de distribution</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:denis.huggenberger@1000assurence.be?subject=[1000 Assurance][Site Web]"><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/equipe/kar_murat.jpg" class="img-responsive img-circle" alt="">
+                        <h4>KARAKUS Murat</h4>
+                        <p class="text-muted">Gérant Fondateur</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:murat.karakus@1000assurence.be?subject=[1000 Assurance][Site Web]"><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="img/equipe/gra_christophe.jpg" class="img-responsive img-circle" alt="">
+                        <h4>MAGILLISSEN GARCIA Christophe</h4>
+                        <p class="text-muted">Représentant de la sprl CGM holding, gérante fondatrice</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="mailto:christophe.garcia@1000assurence.be?subject=[1000 Assurance][Site Web]"><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partenaires Aside -->
+    <section id="partenaires" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nos partenaires</h2>
+                    <h3 class="section-subheading text-muted">Nous travaillons pour vous avec les meilleures compagnies de leur catégorie.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://www.aedessa.be/">
+                        <img src="img/partenaires/aedessa.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://www.aginsurance.be/">
+                        <img src="img/partenaires/aginsurance.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="https://www.axa.be/">
+                        <img src="img/partenaires/axa.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://www.cardif.be/">
+                        <img src="img/partenaires/cardif.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://www.das.be/">
+                        <img src="img/partenaires/das.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <a href="http://www.vab.be">
+                        <img src="img/partenaires/vab.jpg" class="img-responsive img-centered" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Nous contacter</h2>
+                    <h3 class="section-subheading text-muted">Vous avez des questions ? Nous sommes là pour y répondre.</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                  <div class="gmap_contact col-md-6">
+                    <div id="map"></div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div>
+                      <h4><i class="fa fa-home"></i> Siège social</h4></br>
+                      <div class="col-md-4">
+                        <h5>Adresse:</h5>
+                        <p class="text-muted">
+                          1000 Assurance <br/>
+                          Rue de Herstal, 28 <br/>
+                          4680 HERMEE
+                        </p>
+                      </div>
+                      <div class="col-md-5">
+                        <h5>Email:</h5>
+                        <p class="text-muted">
+                          contact@1000assurence.be
+                        </p>
+                      </div>
+                      <div class="col-md-3">
+                        <h5>Téléphone:</h5>
+                        <p class="text-muted">
+                          (+32) 499 13 79 36
+                        </p>
+                      </div>
+                    </div>
+                    <div>
+                      <h4><i class="fa fa-clock-o"></i> Heures d'ouverture</h4></br>
+                      <div class="table-responsive">
+                        <table class="table table-hover">
+                          <thead>
+                            <tr>
+                              <th></th>
+                              <th>Matin</th>
+                              <th>Après-midi</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Lundi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Mardi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Mercredi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Jeudi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                            <tr>
+                              <td>Vendredi</td>
+                              <td>8h30 - 12h30</td>
+                              <td>13h30 - 17h00</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                    <form name="sentMessage" id="contactForm" novalidate>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Nom Prénom *" id="name" required data-validation-required-message="Merci de renseigner vos nom et prénom">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Merci de renseigner votre adresse E-Mail">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" class="form-control" placeholder="Objet *" id="object" required data-validation-required-message="Merci de renseigner l'objet de l'E-Mail">
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="Merci d'écrire votre message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="col-lg-12 text-center">
+                                <div id="success"></div>
+                                <button type="submit" class="btn btn-xl">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; 1000 Assurances 2015</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Mentions Légales</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/agency.js"></script>
+
+</body>
+
+</html>
