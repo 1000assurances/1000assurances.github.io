@@ -19,8 +19,8 @@ jQuery(function($){
     },
     // OPTION MARKER
     marker:{
-      address: "1000 Assurance - Rue de Herstal, 28 - 4680 HERMEE",
-      data: "1000 Assurance - Rue de Herstal, 28 - 4680 HERMEE",
+      address: "1000 Assurances - Rue de Herstal, 28 - 4680 HERMEE",
+      data: "1000 Assurances - Rue de Herstal, 28 - 4680 HERMEE",
       options: {icon: new google.maps.MarkerImage("img/marker.png")},
       events: {
         mouseover: function(marker, event, context){
