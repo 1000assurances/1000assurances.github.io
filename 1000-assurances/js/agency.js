@@ -24,3 +24,9 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+$(function(){
+    $(".nav-tabs a").click(function(){
+        $(this).tab('show');
+    });
+});
