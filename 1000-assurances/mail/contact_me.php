@@ -17,9 +17,9 @@ $message = $_POST['message'];
 
 // Create the email and send the message
 $to = 'dubois.rom@gmail.com'; // Add your email address inbetween the '' replacing yourname@yourdomain.com - This is where the form will send a message to.
-$email_subject = "Formulaire 1000 Assurances:  $name";
+$email_subject = "[1000 Assurances][Formulaire][$name]";
 $email_body = "Vous avez reçu un message depuis le formulaire du site.\n\n"."Voici les détails:\n\Nom: $name\n\nEmail: $email_address\n\Objet: $object\n\nMessage:\n$message";
-$headers = "From: noreply@scille.eu\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
+$headers = "From: dubois.rom@gmail.com\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";
 mail($to,$email_subject,$email_body,$headers);
 return true;
