@@ -748,3 +748,7 @@ body {
   filter: none;
   -webkit-filter: none;
 }
+
+.logo_circle {
+  position: absolute;
+}
