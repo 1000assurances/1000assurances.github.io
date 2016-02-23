@@ -16,6 +16,9 @@ p {
 p.large {
   font-size: 16px;
 }
+p.small {
+  font-size: 12px;
+}
 a,
 a:hover,
 a:focus,
@@ -194,7 +197,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #a6854d;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .navbar-default {
     background-color: transparent;
     padding: 25px 0;
