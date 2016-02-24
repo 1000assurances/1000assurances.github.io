@@ -1,7 +1,7 @@
 
 // MAP PLUGIN
 jQuery(function($){
-  $("#map").width("100%").height("100%").gmap3({
+  $("#map").width("97%").height("97%").gmap3({
     // OPTION MAP
     map: {
       options: {

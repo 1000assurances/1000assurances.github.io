@@ -549,13 +549,15 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact .infos_contact {
-  margin-bottom: 55px;
+section#contact ul {
+  display: table;
+  margin: 0px auto 25px auto;
 }
-section#contact .infos_contact .gmap_contact {
-  height: 450px;
+section#contact .gmap_contact {
+  height: 502px;
+  margin-bottom: 25px;
 }
-section#contact .infos_contact .gmap_contact #map {
+section#contact .gmap_contact #map {
   border: 1px solid #ccc;
   border-radius: 1em;
 }

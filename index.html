@@ -461,98 +461,121 @@
                 </div>
             </div>
             <div class="row">
-                <div class="infos_contact col-lg-12">
-                    <div class="gmap_contact col-md-6">
-                        <div id="map"></div>
-                    </div>
-                    <div class="col-md-6">
-                        <div>
-                            <h4><i class="fa fa-clock-o"></i> Heures d'ouverture</h4>
-                            <div class="col-md-1"> </div>
-                            <div class="table-responsive">
-                                <table class="table table-hover">
-                                    <thead>
-                                      <tr>
-                                        <th></th>
-                                        <th>Après-midi</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <td>Lundi</td>
-                                        <td>17h00 - 21h00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Mardi</td>
-                                        <td>17h00 - 21h00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Mercredi</td>
-                                        <td>17h00 - 21h00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Jeudi</td>
-                                        <td>17h00 - 21h00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Vendredi</td>
-                                        <td>17h00 - 21h00</td>
-                                      </tr>
-                                      <tr>
-                                        <td>Samedi</td>
-                                        <td>Sur <u>rendez-vous</u> uniquement.</td>
-                                      </tr>
-                                    </tbody>
-                                </table>
+                <div class="col-lg-6">
+                    <h4  class="text-center">Bureau</h4><br />
+                    <div id="myCarousel" class="carousel slide">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <!-- Wrapper for Slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <!-- Set the first background image using inline CSS below. -->
+                                <img src="img/carousel/logo.jpg" class="img-responsive img-centered" alt="">
+                            </div>
+                            <div class="item">
+                                <!-- Set the second background image using inline CSS below. -->
+                                <img src="img/carousel/bureau.jpg" class="img-responsive img-centered" alt="">
                             </div>
                         </div>
-                        <div>
-                            <h4><i class="fa fa-home"></i> Siège social</h4>
-                            <ul class="fa-ul text-muted">
-                                <li><i class="fa-li fa fa-map-marker"></i> Rue de Herstal, 28 - 4680 HERMÉE</li>
-                                <li><i class="fa-li fa fa-phone"></i> 04/275.53.30</li>
-                                <li><i class="fa-li fa fa-mobile-phone"></i> 0499/13.79.36</li>
-                                <li><i class="fa-li fa fa-fax"></i> 04/275.53.30</li>
-                                <li><i class="fa-li fa fa-envelope"></i> contact@1000assurances.be</li>
-                            </ul>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                            <span class="icon-prev"></span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                            <span class="icon-next"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="text-center">Heures d'ouverture</h4><br />
+                    <div class="table-hours">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th></th>
+                                    <th>Journée</th>
+                                    <th>Soirée</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>Lundi</td>
+                                    <td>10h00 - 17h00 sur <u>rendez-vous</u></td>
+                                    <td>17h00 - 21h00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mardi</td>
+                                    <td>10h00 - 17h00 sur <u>rendez-vous</u></td>
+
+                                    <td>17h00 - 21h00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Mercredi</td>
+                                    <td>10h00 - 17h00 sur <u>rendez-vous</u></td>
+
+                                    <td>17h00 - 21h00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Jeudi</td>
+                                    <td>10h00 - 17h00 sur <u>rendez-vous</u></td>
+
+                                    <td>17h00 - 21h00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Vendredi</td>
+                                    <td>10h00 - 17h00 sur <u>rendez-vous</u></td>
+                                    <td>17h00 - 21h00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Samedi</td>
+                                    <td>Sur <u>rendez-vous</u> uniquement.</td>
+                                  </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3 class="section-subheading text-muted">Vous avez des questions? Nous sommes là pour y répondre.</h3>
+                <div class="col-lg-6">
+                    <h4  class="text-center">Siège social<br />- Coordonnées -</h4><br />
+                    <div class="gmap_contact"><div id="map"></div></div>
+                    <ul class="fa-ul text-muted">
+                        <li><i class="fa-li fa fa-map-marker"></i> Rue de Herstal, 28 - 4680 HERMÉE</li>
+                        <li><i class="fa-li fa fa-phone"></i> 04/275.53.30</li>
+                        <li><i class="fa-li fa fa-mobile-phone"></i> 0499/13.79.36</li>
+                        <li><i class="fa-li fa fa-fax"></i> 04/275.53.30</li>
+                        <li><i class="fa-li fa fa-envelope"></i> contact@1000assurances.be</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-6">
+                    <h4 class="text-center">Vous avez des questions?<br />Nous sommes là pour y répondre.</h4><br />
                     <form name="sentMessage" id="contactForm" novalidate>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Nom Prénom *" id="name" required data-validation-required-message="Merci de renseigner vos nom et prénom.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Merci de renseigner votre adresse E-Mail.">
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Objet *" id="object" required data-validation-required-message="Merci de renseigner l'objet de l'E-Mail." />
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="Merci d'écrire votre message."></textarea>
-                                    <p class="help-block text-danger"></p>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="col-lg-12 text-center">
-                                <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Envoyer</button>
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Nom Prénom *" id="name" required data-validation-required-message="Merci de renseigner vos nom et prénom.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="E-Mail *" id="email" required data-validation-required-message="Merci de renseigner votre adresse E-Mail.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Objet *" id="object" required data-validation-required-message="Merci de renseigner l'objet de l'E-Mail." />
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Votre Message *" id="message" required data-validation-required-message="Merci d'écrire votre message."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                        <div class="text-center">
+                            <div id="success"></div>
+                            <button type="submit" class="btn btn-xl">Envoyer</button>
                         </div>
                     </form>
                 </div>
