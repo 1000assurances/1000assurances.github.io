@@ -738,6 +738,18 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #bb9d6b;
 }
+#client img {
+  filter: url(../filters/filters.svg#grayscale);
+  /* Firefox 3.5+ */
+  filter: gray;
+  /* IE6-9 */
+  -webkit-filter: grayscale(1);
+  /* Google Chrome & Safari 6+ */
+}
+#client img:hover {
+  filter: none;
+  -webkit-filter: none;
+}
 #partenaires img {
   border-radius: 1em;
   margin: 50px auto;
